@@ -1,5 +1,6 @@
 <result>
 {
-    /congress/people/person[starts-with(name, "John")]
+    //person
+    (:/congress/people/person[starts-with(name, "John")]:)
 }
 </result>
