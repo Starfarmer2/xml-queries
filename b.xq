@@ -1,12 +1,9 @@
 <result>
 {
-    for $c in //committee[@displayname="House Committee on Education and the Workforce"]
-    (:~ let $id := $c/@id ~:)
+    for $c in //committee[@displayname="House Committee on Education and the Workforce"]/subcommittee[@displayname="Higher Education and Workforce Development"]/member,
+        $p in //person
+    where $c/@id = $p/@id
     return
-    <id>
-    {
-        $c
-    }
-    </id>
+    $p
 }
 </result>
