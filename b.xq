@@ -1,6 +1,6 @@
 <result>
 {
-    for $c in //committee[@name="House Committee on Education and the Workforce"]
+    for $c in //committee[@displayname="House Committee on Education and the Workforce"]
     (:~ let $id := $c/@id ~:)
     return
     <id>
