@@ -1,0 +1,5 @@
+<result>
+{
+    //person/role
+}
+</result>
