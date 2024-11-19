@@ -1,6 +1,6 @@
 <result>
 {
-    for $c in /congress/committees/committee[@code="HSED"]
+    for $c in /congress/committees/committee
     (:~ let $id := $c/@id ~:)
     return
     <id>
